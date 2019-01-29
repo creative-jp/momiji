@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 # www.robotstxt.org/
 
 # Allow crawling of all content
-=======
->>>>>>> 41e15bae665c0630ab46fba0c49309127857e284
 User-agent: *
-Disallow: /terms-conditions.html
-Sitemap: http://momiji.haku.ba/sitemap.xml
+Disallow:
