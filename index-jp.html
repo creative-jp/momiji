@@ -22,15 +22,16 @@
 		<link href="css/featherlight.min.css" rel="stylesheet">
 		
 		<script>
-			Set language version of page
 			var language = navigator.language || navigator.browserLanguage;
 			var languageOverride = localStorage.getItem('languageOverride');
-			
-			if (languageOverride != 'japanese') {
-				if (language.indexOf('en') > -1) {
+			if (language.indexOf('en') > -1) {
+				if (languageOverride != 'ja') {
 					document.location.href = "index.html";
 				}
 			}
+			
+				
+				
 		</script>
 
 		<meta name="description" content="日本語">

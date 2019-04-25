@@ -21,28 +21,33 @@
 		<script src="js/vendor/map.js"></script>
 		<link href="css/featherlight.min.css" rel="stylesheet">
 		
-		<script>
-			Set language version of page
-			var language = navigator.language || navigator.browserLanguage;
-			var languageOverride = localStorage.getItem('languageOverride');
-			
-			if (languageOverride != 'english') {
-				if (language.indexOf('ja') > -1) {
-					document.location.href = "index-jp.html";
-				}
-			}
-		</script>
-		
 		<meta name="description" content="A ski-in / ski-out boutique hotel adjoining the Cortina and Norikura resorts in the Hakuba Valley, Japan. Check for discounted Winter accommodation rates.">
 		<meta name="keywords" content="otari, hakuba, boutique, accommodation, ski-in, ski-out, hotel, nagano">
 		
 		<link rel="icon" href="favicon.png">
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">   
+		
+		<script>
+			var language = navigator.language || navigator.browserLanguage;
+			var languageOverride = localStorage.getItem('languageOverride');
+			if (language.indexOf('ja') > -1) {
+					//document.location.href = "index-jp.html";
+				}
+			//if (languageOverride != 'ja') {
+			//	alert("lang overridden to: "languageOverride);
+			//	if (language.indexOf('en') > -1) {
+			//		document.location.href = "index.html";
+			//	}
+			//}
+			
+		</script>
 		 	
 	</head>
     
     <body id="home">
+	    
+	    
 		<nav>
 			<a class="logo-link" title="Go to Momiji homepage" href="/">
 					<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 161.8 34.1" xml:space="preserve"><style type="text/css">
